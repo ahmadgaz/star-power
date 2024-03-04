@@ -8,7 +8,7 @@
 
 A simple star rating component for React.
 
-![Preview](https://github.com/ahmadgaz/star-power/preview.gif)
+![Preview](https://github.com/ahmadgaz/star-power/blob/master/preview.gif)
 
 ## Installation
 
