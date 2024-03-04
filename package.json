@@ -1,0 +1,50 @@
+{
+  "name": "star-power",
+  "version": "1.0.0",
+  "description": "A star rating component for your React app.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && node build.js && tsc --emitDeclarationOnly --outDir dist",
+    "clean": "rimraf dist",
+    "dev": "node serve.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rating",
+    "star",
+    "rating",
+    "stars",
+    "rating",
+    "animation"
+  ],
+  "author": "Ahmad Gazali <gazali.contact@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "chokidar": "^3.5.2",
+    "esbuild": "^0.14.10",
+    "live-server": "^1.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "lottie-react": "^2.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadgaz/star-power.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmadgaz/star-power/issues"
+  },
+  "homepage": "https://github.com/ahmadgaz/star-power#readme"
+}
