@@ -2,13 +2,13 @@ import React from "react";
 import { useLottie } from "lottie-react";
 
 interface StarsProps {
-  rating: number;
+  rating?: number;
 }
 
 const Stars: React.FC<StarsProps> = ({ rating }) => {
   const { View } = useLottie({
-    animationData:
-      rating >= 0 && rating < 1
+    animationData: rating
+      ? rating >= 0 && rating < 1
         ? require("./assets/star-rating-0.5.json")
         : rating >= 1 && rating < 1.5
         ? require("./assets/star-rating-1.json")
@@ -26,7 +26,8 @@ const Stars: React.FC<StarsProps> = ({ rating }) => {
         ? require("./assets/star-rating-4.json")
         : rating >= 4.5 && rating < 5
         ? require("./assets/star-rating-4.5.json")
-        : require("./assets/star-rating-5.json"),
+        : require("./assets/star-rating-5.json")
+      : require("./assets/star-rating-null.json"),
     autoplay: true,
     loop: false,
   });
